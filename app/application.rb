@@ -2,10 +2,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    num_1 = Kernel.rand(1..24)
-
-    resp.write "#{num_1}\n"
-
+    time = Time.now
     if num_1 >= 12
       resp.write "Good Afternoon!"
     else
