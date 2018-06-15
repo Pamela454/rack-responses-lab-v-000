@@ -3,6 +3,7 @@ class Application
     resp = Rack::Response.new
 
     time = Time.now
+    
     if num_1 >= 12
       resp.write "Good Afternoon!"
     else
